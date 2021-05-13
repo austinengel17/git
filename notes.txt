@@ -1,0 +1,43 @@
+Types of Source Control
+    Primitive - you save the whole document multiple times with different names.
+    Source Code Control System (SCCS) - stores original version and sets of changes.
+    Revision Control System (RCS) - stored latest version and sets of changes.
+    Concurrent Versions System (CVS) - multiple files, entire project, multi-user repositories. (trouble with renaming files)
+    Apache Subversion (SVN) - track text and images. Track file changes collectively, not just the files. 
+    BitKeeper SCM - closed source, Linux kernel was actually using this from 2002-2005
+    Git - created by Linus Torvalds, replacement of BitKeeper.
+
+
+Distributed Version Control
+    Git is distributed version control.
+        Different users maintain their own repositories.
+        Changes are stored as change sets. (tracks changes, not versions)
+        No single master repository.
+        Many working copies.
+    No need to communicate with a central server.
+    No network access required.
+    No single failure point.
+    Encourages participation and forking of projects.
+    All repos are considered equal by Git.
+
+
+Git Configuration
+    git config --modifer(system, global)
+    git config --global user.name "Benjamin Arsenault"
+    git config --global user.email "hi@benjamin.dev"
+    git config --global core.editor "editor.exe --wait"
+
+
+Git auto-completion
+    Will try to guess what you are typing, when in terminal click tab.
+
+
+Git help
+    git help
+
+
+Git Basicss
+    git init // initializes repository
+    .git is where git is stored, if deleted git will be removed from a project.
+    git add . // adds all files to staging area.
+    git commit -m "commit message" // makes a commit with a message.
