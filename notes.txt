@@ -39,5 +39,34 @@ Git help
 Git Basicss
     git init // initializes repository
     .git is where git is stored, if deleted git will be removed from a project.
-    git add . // adds all files to staging area.
+    git add . // adds all files to staging area, will now track changes.
     git commit -m "commit message" // makes a commit with a message.
+        Always begin with a short single-line summary (less than 50 characters).
+        Optionally followed by a blank line and a more complete description.
+        Write commit messages in present tense, not past tense. ("fix for a bug" not "fixed a bug").
+        Be clear and descriptive.
+    git log // returns a log of all commits.
+        git log -n 5 // limits number of commits to said number
+        git log --author="Kevin" // lists commits by Kevin
+        git log --grep="init" // globally search for regular expressions, shows all inits 
+    git status // shows current status
+    git diff // view changes between repository version and working directory.
+
+
+Git Concepts and Architecture
+    The Three Trees
+        Repository 
+        Staging Index (add changes we want before commit)
+        Working (checkout from repo, commit to repo)
+    Git workflows
+        git add <file>
+        git commit
+        git add <file>
+        git commit
+        Git generates a checksum for each chnage set, Checksum algorithms convert data into a simple number, same data always equals same checksum, Data integrity is fundamental, changing data will change checksum. Uses SHA-1 hash algorithm.
+    HEAD Pointer
+        Points to parent of next commit where writing commits takes place.
+        Points to tip of repository.
+        HEAD exists in .git/HEAD, refs/heads/master 
+
+
